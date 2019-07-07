@@ -1,0 +1,132 @@
+header {
+    font-family: Arial;
+	text-align: right;
+}
+
+body {
+    font-family: Arial;
+	
+}
+
+.htext {
+    text-align: center;
+}
+
+.marquee {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-marquee-direction: up;
+    -moz-transform:translateY(100%);
+    -webkit-transform:translateY(100%);    
+    transform:translateY(100%);
+    -moz-animation: scroll-up 5s linear infinite;
+    -webkit-animation: scroll-up 5s linear infinite;
+    animation: scroll-up 5s linear infinite;
+}
+.scroll-up:hover {
+    animation-play-state: paused
+}
+
+.scroll-up {
+    right: 50px;
+    top: 200px;
+    height: 100px;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+}
+.scroll-up .comments {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateY(100%);
+    -webkit-transform:translateY(100%);    
+    transform:translateY(100%);
+    /* Apply animation to this element */  
+    -moz-animation: scroll-up 8s linear infinite;
+    -webkit-animation: scroll-up 8s linear infinite;
+    animation: scroll-up 8s linear infinite;
+}
+/* Move it (define the animation) */
+
+@keyframes scroll-up {
+    0%  {   -moz-transform: translateY(100%); /* Browser bug fix */
+            -webkit-transform: translateY(100%); /* Browser bug fix */
+            transform: translateY(100%);
+        }
+    100% {  -moz-transform: translateY(-100%); /* Browser bug fix */
+            -webkit-transform: translateY(-100%); /* Browser bug fix */
+            transform: translateY(-100%); 
+        }
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+	overflow: hidden;
+    background-color: #FFF;
+    height: 40%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; 
+	
+}
+
+.menu li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	font-size:25px
+	
+}
+
+/* Change the link color on hover */
+.menu li a:hover {
+    background-color: #999999;
+}
+.p{
+	text-align: right;
+}
+/**
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bolder;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover 
+.menu li a:hover {
+    background-color: #4CAF50;
+}
+*/
+
+.copyright {
+    text-align: center;
+}
